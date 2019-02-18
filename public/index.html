@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:600&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<title>Bağ Rehberi</title>
+<meta content='Bağ Rehberi' name='title'>
+<meta content='Türkiye&#39;nin Bağ Rehberi' name='description'>
+<meta name='keywords'>
+<meta content='' name='author'>
+<link href='/harita/stylesheets/leaflet.css?565' rel='stylesheet'>
+<link href='/harita/stylesheets/app.css?188' rel='stylesheet'>
+<link href='/img/apple-touch-icon-152x152-precomposed.png' rel='apple-touch-icon-precomposed'>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body data-offset='0' data-spy='scroll' data-target='.subnav'>
+<ul class='scroll-pane' id='cats'>
+<li class='cat search' id='cat_arama'>
+<div class='clearfix'>
+<span class='title' style='background-image:url(/harita/img/search.svg);color:#455a64;'>&nbsp; Arama&nbsp; &nbsp;</span>
+<span class='num'></span>
+</div>
+</li>
+<li class='cat cat_ekolojik-yerleske' id='cat_ekolojik-yerleske'>
+<div class='clearfix'>
+<span class='title' style='background-image:url(/harita/img/ekolojik_yerleske.svg);'> &nbsp;  Ekolojik yerleşke &nbsp;</span>
+<span class='num'> 1&nbsp;  &nbsp;</span>
+</div>
+</li>
+<li class='cat cat_kent-bostani' id='cat_kent-bostani'>
+<div class='clearfix'>
+<span class='title' style='background-image:url(/harita/img/kent_bostani.svg);'> &nbsp;  Kent bostanı &nbsp;</span>
+<span class='num'> 1&nbsp;  &nbsp;</span>
+</div>
+</li>
+<li class='cat cat_kolektif-inisiyatif' id='cat_kolektif-inisiyatif'>
+<div class='clearfix'>
+<span class='title' style='background-image:url(/harita/img/kolektif_inisiyatif.svg);'> &nbsp;  Kolektif & İnisiyatif &nbsp;</span>
+<span class='num'> 1&nbsp;  &nbsp;</span>
+</div>
+</li>
+<li class='cat cat_ekolojik-pazar-gida-toplulugu' id='cat_ekolojik-pazar-gida-toplulugu'>
+<div class='clearfix'>
+<span class='title' style='background-image:url(/harita/img/ekolojik_pazar_gida_toplulugu.svg);'> &nbsp;  Ekolojik pazar & Gıda topluluğu &nbsp;</span>
+<span class='num'> 1&nbsp;  &nbsp;</span>
+</div>
+</li>
+<li class='cat cat_botanik-bahce' id='cat_botanik-bahce'>
+<div class='clearfix'>
+<span class='title' style='background-image:url(/harita/img/botanik_bahce.svg);'> &nbsp;  Botanik bahçe &nbsp;</span>
+<span class='num'> 1&nbsp;  &nbsp;</span>
+</div>
+</li>
+<li class='cat cat_stk' id='cat_stk'>
+<div class='clearfix'>
+<span class='title' style='background-image:url(/harita/img/stk.svg);'> &nbsp;  STK &nbsp;</span>
+<span class='num'> 1&nbsp;  &nbsp;</span>
+</div>
+</li>
+<li class='cat cat_alternatif-ekonomiler' id='cat_alternatif-ekonomiler'>
+<div class='clearfix'>
+<span class='title' style='background-image:url(/harita/img/alternatif_ekonomiler.svg);'> &nbsp;  Alternatif ekonomiler &nbsp;</span>
+<span class='num'> 1&nbsp;  &nbsp;</span>
+</div>
+</li>
+<li class='cat cat_bilgi-bankasi-blog' id='cat_bilgi-bankasi-blog'>
+<div class='clearfix'>
+<span class='title' style='background-image:url(/harita/img/bilgi_bankasi_blog.svg);'> &nbsp;  Bilgi bankası & Blog &nbsp;</span>
+<span class='num'> 1&nbsp;  &nbsp;</span>
+</div>
+</li>
+<li class='cat cat_balkon-bahce' id='cat_balkon-bahce'>
+<div class='clearfix'>
+<span class='title' style='background-image:url(/harita/img/balkon_bahce.svg);'> &nbsp;  Balkon - Bahçe &nbsp;</span>
+<span class='num'> 1&nbsp;  &nbsp;</span>
+</div>
+</li>
+<li class='cat cat_muze' id='cat_muze'>
+<div class='clearfix'>
+<span class='title' style='background-image:url(/harita/img/muze.svg);'> &nbsp;  Müze &nbsp;</span>
+<span class='num'> 1&nbsp;  &nbsp;</span>
+</div>
+</li>
+<li class='cat cat_ekoturizm-kamp' id='cat_ekoturizm-kamp'>
+<div class='clearfix'>
+<span class='title' style='background-image:url(/harita/img/ekoturizm_kamp.svg);'> &nbsp;  Ekoturizm - Kamp &nbsp;</span>
+<span class='num'> 1&nbsp;  &nbsp;</span>
+</div>
+</li>
+</ul>
+<div id='itms'></div>
+<div id='map'></div>
+</body>
+<script src='/harita/javascripts/main.js?285'></script>
+<script src='/harita/javascripts/app.js?92' type='text/javascript'></script>
+<script>
+  var $content = [{"id":1,"name":"Zumbara","category":"Alternatif Ekonomiler","address":"Türkiye","latitude":"40.873089308072956","longitude":"28.176366433593785","description":"Para yerine zamanın kullanıldığı, yetenek ve tecrübelerin paylaşıldığı topluluk Zumbara seni de bekliyor. Bu yepyeni deneyime katkıda bulunmaya ne dersin?","tags":"alternatif ekonomi, zaman kumbarası, takas","url":"https://www.ekoharita.org/project/zumbara/","phone":"","email":"","logo":"https://d12oh4b377r949.cloudfront.net/places/04e2ec35-adf8-45b4-b82f-8a157c69bf67/31e13c64-961b-425a-afb1-33ae9252d3c2_logo","linkedin":"","twitter":"http://www.twitter.com/zumbaradan","youtube":"http://www.youtube.com/zumbaradan","facebook":"http://www.facebook.com/zumbara","year":"2009","instagram":"","ek_website":"","eklenme_tarihi":"17.02.2018","NOT":"","OK?":"OK","icon":"alternatif_ekonomiler"},{"id":2,"name":"SALT Beyoğlu","category":"Balkon-Bahçe","address":"Kallavi Sk. No:2 Asmalı Mescit 34430 Beyoğlu/İstanbul Türkiye","latitude":"41.03219547487958","longitude":"28.976111114819332","description":"SALT Beyoğlu, 1130 metrekarelik programlama alanı ile öncelikle bir sergi mekânıdır. İstiklal Caddesi ile kurumun arayüzünde, günlük program bilgilerinin paylaşıldığı giriş mekânı Forum yer alır. Girişin uzantısına eklemlenen Açık Sinema, programlı gösterimlerin yanı sıra anlık etkinlikler, performanslar, konuşmalar için samimi bir platform oluşturur. SALT Beyoğlu yapısında ayrıca, SALT Mutfak'ta faaliyet gösteren Gastronomika, Ahmet Öğüt'ün yürüttüğü Aciliyet Mektebi, Robinson Crusoe 389 ve Slow Food Gençlik Ağı İstanbul Ekibi'nin programladığı 'Bahçe' bulunmaktadır.","tags":"bahçe, teras, beyoğlu, Atölyeler, Slow Food Gençlik Ağı, Robinson Crusoe 389, permakültür, bitki","url":"https://www.ekoharita.org/project/salt-beyoglu/","phone":"+90 212 377 42 00","email":"","logo":"https://d12oh4b377r949.cloudfront.net/places/02bfde0e-7994-4473-a061-29652144bed3/27207157-c96e-46a4-9492-f736329d6982_logo","linkedin":"","twitter":"https://twitter.com/SALT_Online","youtube":"https://www.youtube.com/user/SALTonlineistanbul","facebook":"https://www.facebook.com/saltbeyoglu","year":"2015","instagram":"","ek_website":"","eklenme_tarihi":"17.02.2018","NOT":"","OK?":"OK","icon":"balkon_bahce"},{"id":3,"name":"Permakültür Platformu","category":"Bilgi Bankası & Blog","address":"...","latitude":"40.753107164058996","longitude":"28.41497574755863","description":"Bilgi paylaştıkça çoğalır... Permakültürün özü olan dayanışma ve çeşitliliğe pratik bir anlam kazandırmak üzere, bir bilgi paylaşımı platformu oluşturmaya giriştik. Böylelikle Permakültür'ün olabildiğince geniş bir şekilde tanınacağını ve hareket kabiliyetinin artacağını umuyoruz.","tags":"permakültür, blog, ekolojik yaşam, doğal yaşam, tarım, toprak","url":"https://www.ekoharita.org/project/permakultur-platformu/","phone":"","email":"info@permakulturplatformu.org","logo":"https://d12oh4b377r949.cloudfront.net/places/e3a5b2cd-6f22-4554-9bed-3f727f834cda/aef5a201-02b4-4ca1-a87f-d0583327f183_logo","linkedin":"","twitter":"","youtube":"","facebook":"https://www.ekoharita.org/project/permakultur-platformu/","year":"2010","instagram":"","ek_website":"","eklenme_tarihi":"17.02.2018","NOT":"","OK?":"OK","icon":"bilgi_bankasi_blog"},{"id":4,"name":"Zeytinburnu Tıbbi Bitkiler Bahçesi","category":"Botanik Bahçe","address":"Seyitnizam, Zeytinburnu, Zeytinburnu Tıbbi Bitkiler Bahçesi İç Yolu, 34015 İstanbul, Türkiye","latitude":"41.00868800000001","longitude":"28.916290000000004","description":"Türkiye’nin tek tıbbi bitkiler bahçesidir. 14 dönümlük alanda kurulmuş, 2005 yılında açılmıştır. Zeytinburnu Belediyesi ile Merkezefendi Geleneksel Tıp Derneğinin yürüttükleri projedir.","tags":"bahçe, bitki, botanik, tıbbi, ziyaret, eğitim, araştırma","url":"https://www.ekoharita.org/project/zeytinburnu-tibbi-bitkiler-bahcesi/","phone":"0212 6644155","email":"bilgi@ztbb.org","logo":"https://d12oh4b377r949.cloudfront.net/places/54bdaf1c-c614-459f-8350-94bef38c9b6e/f9c2724b-755e-4d53-b9fb-6662699eeda9_logo","linkedin":"","twitter":"https://www.ekoharita.org/project/zeytinburnu-tibbi-bitkiler-bahcesi/","youtube":"","facebook":"https://www.ekoharita.org/project/zeytinburnu-tibbi-bitkiler-bahcesi/","year":"2005","instagram":"","ek_website":"","eklenme_tarihi":"17.02.2018","NOT":"","OK?":"OK","icon":"botanik_bahce"},{"id":5,"name":"Şişli Ekolojik Pazarı","category":"Ekolojik Pazar & Gıda Topluluğu","address":"Semt Pazarı No:8 Cumhuriyet 34380 Şişli/İstanbul Türkiye","latitude":"41.0565020108847","longitude":"28.980043583467136","description":"Her Cumartesi 7:00 - 17:00 saatleri arasında kurulan ekolojik pazarda uygun fiyatlarda çok çeşitli organik sebze ve meyve bulabilirsiniz.","tags":"buğday derneği, ekolojik, organik, gıda, şişli, ekolojik pazar, doğal ürün","url":"https://www.ekoharita.org/project/sisli-ekolojik-pazari/","phone":"+90 (216) 349 99 33","email":"portal@bugday.org","logo":"https://d12oh4b377r949.cloudfront.net/places/1b1eef47-4eba-488c-b95a-b6f739c92d7d/1ddb848e-095e-4fcf-8b1d-5bb0cf687949_logo","linkedin":"","twitter":"","youtube":"","facebook":"https://www.facebook.com/groups/114674690694/?fref=ts","year":"2015","instagram":"","ek_website":"","eklenme_tarihi":"17.02.2018","NOT":"","OK?":"OK","icon":"ekolojik_pazar_gida_toplulugu"},{"id":6,"name":"Belentepe Permakültür Uygulama ve Doğal Yaşam Çİftliği","category":"Ekolojik Yerleşke","address":"Osmangazi, Mürseller Köyü İç Yolu, 16370, Bursa, Türkiye","latitude":"40.0955445","longitude":"29.025541900000007","description":"Sürdürülebilir yaşamın hayal olmadığını kanıtlamak üzere yola çıktık. Doğayı bozmayan, daha da geliştiren, güzelleştiren bir yaşam sistemini hayata geçiriyoruz. Kendi enerjisini doğal ve temiz kaynaklardan üreten, kendi gıdasını doğal yollardan üreten, permakültür prensiplerine göre tarım ve hayvancılık yapan, doğal yapı malzemeleri kullanılan, sürdürülebilir bir yaşam alanı oluşturuyoruz. Bilgi ve tecrübelerimizi paylaşmak ve yardımlaşmak için çeşitli çalışmalar, aktiviteler gerçekleştiriyoruz.","tags":"permakültür, ziyaret, temiz enerji, kamp, gezi, eğitim","url":"https://www.ekoharita.org/project/belentepe-permakultur-uygulama-ve-dogal-yasam-ciftligi/","phone":"0532 614 99 43","email":"","logo":"https://d12oh4b377r949.cloudfront.net/places/7c951ad6-3a38-415d-9d04-f3349d1f408f/5bb55f0c-da15-4526-b8fc-1857cb33e7b2_logo","linkedin":"","twitter":"","youtube":"https://www.ekoharita.org/project/belentepe-permakultur-uygulama-ve-dogal-yasam-ciftligi/","facebook":"https://www.ekoharita.org/project/belentepe-permakultur-uygulama-ve-dogal-yasam-ciftligi/","year":"2015","instagram":"","ek_website":"","eklenme_tarihi":"17.02.2018","NOT":"","OK?":"OK","icon":"ekolojik_yerleske"},{"id":7,"name":"Hızır Kamp","category":"EkoTurizm-Kamp","address":"10300 Mehmetalanı/Edremit/Balıkesir, Türkiye","latitude":"39.6490999","longitude":"26.967581399999972","description":"Kazdagi'nin eteklerindeki Hizir Kamp","tags":"doğal mimari, Ekoloji, ekolojik tarım, ekolojik yaşam, etkinlik, organik bahçecilik, turistik, ekolojik etkinlikler","url":"https://www.ekoharita.org/project/hizir-kamp/","phone":"","email":"","logo":"https://www.ekoharita.org/wp-content/uploads/2015/08/ekoharita-150x150-logoeksik.png","linkedin":"","twitter":"","youtube":"","facebook":"https://www.facebook.com/groups/hizirkamp/?ref=br_rs","year":"2015","instagram":"","ek_website":"http://www.hizirkamp.com/index.html","eklenme_tarihi":"17.02.2018","NOT":"","OK?":"OK","icon":"ekoturizm_kamp"},{"id":8,"name":"Roma Bostanı","category":"Kent Bostanı","address":"Tüfekçi Salih Sk. No:1Kılıçali Paşa 34425 Beyoğlu/İstanbulTürkiye","latitude":"41.02901762858505","longitude":"28.983293780426038","description":"Roma Bostanı'nı permakültür ilke ve prensiplerine göre tasarlıyoruz.Bostanda kendine yeten bir sistem oluşturmayı istiyoruz.","tags":"permakültür, bostan, cihangir, bitki, kent bostanı, topluluk","url":"https://www.ekoharita.org/project/roma-bostani/","phone":"","email":"","logo":"https://d12oh4b377r949.cloudfront.net/places/0a964200-2f31-4ba4-aaf0-0d34b88be481/b77063a8-daef-472c-9af5-b329d237f6a5_logo","linkedin":"","twitter":"https://www.ekoharita.org/project/roma-bostani/","youtube":"","facebook":"https://www.ekoharita.org/project/roma-bostani/","year":"2015","instagram":"","ek_website":"","eklenme_tarihi":"17.02.2018","NOT":"","OK?":"OK","icon":"kent_bostani"},{"id":9,"name":"İstanbul Permakültür Kolektifi","category":"Kolektif & İnisiyatif","address":"Halka Sanat Galeri, Kadıköy, Türkiye","latitude":"40.9846636","longitude":"29.025811900000008","description":"İstanbul Permakültür Kolektifi, yolları permakültür ile kesişen iki arkadaşın ortak hayali üzerine Şubat 2013'te kurulmuştur. Hedefleri arasında İstanbul'da yaşayanlara permakültürün ne olduğunu anlatmak, permakültür ve kapsamakta olduğu konular üzerine film gösterimleri, söyleşiler, atölyeler hazırlamak ve kentli insanın toprakla, sürdürülebilir yaşamla tanışıklığını, bağlarını kuvvetlendirmek vardır. Günümüz kentlerinde insanın doğa ile bağları yavaş yavaş kopmakta, günden güne uzaklaşmaktadır. Oysa doğa, bizim büyük öğretmenimizdir. Hayata, soluduğumuz havaya, üzerinde yaşadığımız toprağa can katan doğadır. Biz ona dokunmadığımız sürece, kendi kendisini devam ettiren, yaşatan, üzerindeki canlıları besleyen bir yapısı vardır. Yaşam şartlarımızı ne kadar ona yakın, onunla dost kurarsak, o kadar çok bizimle etkileşimde bulunur, bize kazanç sağlar. Bunu unuttuğumuz an ise sorunlar başlar. O yüzden, bizlerin amacı da doğa ile uyumlu yerleşim sistemleri kurabilmek, bu sistemlerin parçası olabilmektir. Dağcılıkla uzun yıllardır ilgilenen, aslen Anadolu Üniversitesi İşletme Bölümü mezunu Seda Eskitaşçıoğlu Ergazi, doğa ile içiçe yaşayıp, büyük bir hızla yok oluşuna seyirci kalmak istememiştir. Uzun yıllar finans alanında büyük şirketlerde çalışmış, şirketlerin doğayı ne yönde etkilediklerini görmüş, doğa ile başbaşa kaldığında, yok oluş hızına inanamamıştır. Ne yapabilirim sorusunu kendi kendine sorarken, bir arkadaşının sayesinde Permakültür ile tanışmış ve şehirde permakültür uygulamaları yapan Permablitz İstanbul grubuna katılmıştır. Bir bahçe uygulamasının ardından da 2012 yılı Ağustos ayında, Türkiye Permakültür Araştırma Enstitüsünün, Permakültür Tasarım Sertifikası kursuna giderek temel eğitimimi tamamlamış ve Permakültür Tasarım Sertifikasını almıştır. Permablitz İstanbul grubunun tohum koodinatörlüğü görevini üstlenmiştir. Bunun yanında şehirde neler yapabiliriz derken Dilek ile ortak amaçta buluştuk, hemen büyük bir hızla çalışmalara başladı","tags":"kolektif, permakültür, eğitim, teorik eğitim, uygulamalı eğitim","url":"https://www.ekoharita.org/project/istanbul-permakultur-kolektifi/","phone":"","email":"","logo":"https://d12oh4b377r949.cloudfront.net/places/91e09d42-796d-482e-9e1a-37c0bc8ecdc9/8f024ee8-6497-4b9c-81c2-0b7aab156e07_logo","linkedin":"","twitter":"https://twitter.com/PKolektifi","youtube":"","facebook":"https://www.facebook.com/istanbulpermakulturkolektifi","year":"2013","instagram":"","ek_website":"","eklenme_tarihi":"17.02.2018","NOT":"","OK?":"OK","icon":"kolektif_inisiyatif"},{"id":10,"name":"Yeşilova Höyüğü Ziyaretçi Merkezi","category":"Müze","address":"Bornova/İzmir, Türkiye","latitude":"38.44137042296703","longitude":"27.21367584602058","description":"İzmir'in merkezinde Ege Üniversitesinie yürüyüş mesafesi yarım saat, Otpga'a 15 dakika uzaklıkta olan Yeşilova Neolitik (Cilalı Taş Devri- Tarım Çağı) yerleşimi 8500 yıllık bir tarım yerleşimine ait. 8500 yıl önce bir yangın geçirmiş ve birinci kat oluşmuş. 8 kattan oluşan yerleşimin en üst katı da yaklaşık 4500 yıllık ve kalkolitik çağa ait. Devamında da Forum Bornova'nın karşısında Yassı Tepe höyüğü ve Bornova Anadolu Lisesinin (BAL) bahçresinde bulunan İpeklikuyuhöyükleri de bu köyün devamı olarak kabul edilen yerleşimler. Ziyaretçi merkezi aktif kazı çalışmalarının yanında bulgular üzerinde çalışmaların sürdürüldüğü ,bir alan köyün örneği olarak yapılmış 5 kulübeden oluşan köy 8500 yıl önce insanların nasıl yaşadığına ilişkin ilginç bir deneyim sunuyor. Yeşilova Höyüğü Ziyaretçi Merkezi ücretsiz ve haftanın 5 günü ziyarete açıktır. Ziyaretler kazı ekibi üyesi uzmanların rehberliğinde gerçekleştirilmektedir.  Yeşilova Höyüğü Tanıtım Sayfaları Ege Üniversitesi: Yeşilova Höyük - http://yesilova.ege.edu.tr/ Bornova Belediyesi: Yeşilova Höyüğü Ziyaretçi Merkezi - http://yesilovahoyugu.bornova.bel.tr/index.php/32 Kültür Bakanlığı: Yeşilova Höyüğü - http://www.izmirkulturturizm.gov.tr/Eklenti/9471,yesilova-hoyugupdf.pdf?0​","tags":"antik, Müze, Ziyaret, Tarım","url":"https://www.ekoharita.org/project/yesilova-hoyugu-ziyaretci-merkezi/","phone":"","email":"","logo":"https://d12oh4b377r949.cloudfront.net/places/e2a220b0-0562-4bce-b2a7-b7fbc87e4009/bcfb8263-3cd7-43a4-84d7-eb7da5125f16_logo","linkedin":"","twitter":"","youtube":"","facebook":"","year":"2009","instagram":"","ek_website":"http://yesilova.ege.edu.tr/","eklenme_tarihi":"17.02.2018","NOT":"","OK?":"OK","icon":"muze"},{"id":11,"name":"Ekolojik Yaşamı Destekleme Derneği","category":"STK","address":"Nüzhet Efendi Sk. No:49Osmanağa 34714 Kadıköy/İstanbulTürkiye","latitude":"40.99245491845407","longitude":"29.026429313491803","description":"Buğday'ın hizmet ettiği amaçlar şöyle sıralanabilir: *Geleneksel süreçteki üretimlerin korunması, sürdürülmesi *İnsan gereksinimlerinin ekosistem döngülerine uyum içinde yeniden tanımlanması *Çevre ve insan sağlığına zarar vermeyen sürdürülebilir tarım yöntemlerinin yaygınlaştırılması *Bireyin doğa ve çevresi ile uyum içinde yaşayabilmesi için bilgilendirilmesi ve becerilerini geliştirebilmesi amacıyla faaliyet alanları yaratılması.","tags":"ekolojik yaşam, eğitim, ekolojik etkinlikler, tohum, konferans, ekolojik ürün, doğal yaşam, tohum takas","url":"https://www.ekoharita.org/project/bugday-ekolojik-yasami-destekleme-dernegi/","phone":"+90 (216) 349 99 33","email":"portal@bugday.org","logo":"https://d12oh4b377r949.cloudfront.net/places/f4e5a235-4306-4f53-b3c3-832573c30aa3/c3651b52-b1ae-48bf-8070-0c9d8b52d80a_logo","linkedin":"","twitter":"https://www.ekoharita.org/project/bugday-ekolojik-yasami-destekleme-dernegi/","youtube":"https://www.ekoharita.org/project/bugday-ekolojik-yasami-destekleme-dernegi/","facebook":"https://www.ekoharita.org/project/bugday-ekolojik-yasami-destekleme-dernegi/","year":"2015","instagram":"","ek_website":"","eklenme_tarihi":"17.02.2018","NOT":"","OK?":"OK","icon":"stk"}];
+  var $cats = {"ekolojik-yerleske":[6],"kent-bostani":[8],"kolektif-inisiyatif":[9],"ekolojik-pazar-gida-toplulugu":[5],"botanik-bahce":[4],"alternatif-okul-egitim":[],"ciftlik-eko-girisim":[],"stk":[11],"alternatif-ekonomiler":[1],"bilgi-bankasi-blog":[3],"balkon-bahce":[2],"muze":[10],"milli-park":[],"ekolojik-mimari":[],"ekoturizm-kamp":[7]};
+  $cats["arama"] = [];
+  var markers;
+  
+  var tile = L.tileLayer.provider('Thunderforest.Transport', {minZoom: 4, maxZoom: 18, apikey:"819dee1c8f874141ad1f7cec78d2efc5"});
+  var terrain = L.tileLayer.provider('Thunderforest.OpenCycleMap', {minZoom: 4, maxZoom: 18, apikey:"819dee1c8f874141ad1f7cec78d2efc5"});
+  var sat2009 = L.tileLayer.provider('Esri.WorldImagery', {attribution: 'Tiles © Esri', minZoom: 4, maxZoom: 17, });
+  
+  var baseMaps = {
+    "Uydu": sat2009,
+    "Fiziki": terrain,
+    "Sokak": tile,
+  };
+  
+  clickinfo = "Künye için tıkla";
+  zoomin = "Yakınlaştır";
+  locale = "tr";
+  $(document).ready(function(){
+    initMap($content);
+    $(".zom").on("click", zom);
+  });
+</script>
+</html>
