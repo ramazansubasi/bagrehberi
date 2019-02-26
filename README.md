@@ -56,3 +56,8 @@ into the interactive console. A file called `stored_token.json` will be created
 in project's root folder and further content updates will work smoothly.
 
 
+Github Commads
+=====
+git commit -a -m "message"
+git push git@github.com:ramazansubasi/bagrehberi.git
+
