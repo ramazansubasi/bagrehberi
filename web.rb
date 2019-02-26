@@ -88,7 +88,7 @@ end
 
 $content = []
 $cats = {}
-$cnms = {"ekolojik-yerleske"=>"Ekolojik yerleşke","kent-bostani"=>"Kent bostanı","kolektif-inisiyatif"=>"Kolektif & İnisiyatif","ekolojik-pazar-gida-toplulugu"=>"Ekolojik pazar & Gıda topluluğu","botanik-bahce"=>"Botanik bahçe","alternatif-okul-egitim"=>"Alternatif okul & Eğitim","ciftlik-eko-girisim"=>"Çiftlik & Eko-girişim","stk"=>"STK","alternatif-ekonomiler"=>"Alternatif ekonomiler","bilgi-bankasi-blog"=>"Bilgi bankası & Blog","balkon-bahce"=>"Balkon - Bahçe","muze"=>"Müze","milli-park"=>"Milli park","ekolojik-mimari"=>"Ekolojik mimari","ekoturizm-kamp"=>"Ekoturizm - Kamp"}
+$cnms = {"ekolojik-yerleske"=>"Trakya Bağ Rotası","kent-bostani"=>"Urla Bağ Rotası","kolektif-inisiyatif"=>"Bozcaada","ekolojik-pazar-gida-toplulugu"=>"Ege Bölgesi","botanik-bahce"=>"Akdeniz Bölgesi","alternatif-okul-egitim"=>"Alternatif okul & Eğitim","ciftlik-eko-girisim"=>"Çiftlik & Eko-girişim","stk"=>"STK","alternatif-ekonomiler"=>" Güneydoğu Bölgesi","bilgi-bankasi-blog"=>"Marmara Bölgesi","balkon-bahce"=>"Balkon - Bahçe","muze"=>"Müze","milli-park"=>"Milli park","ekolojik-mimari"=>"Ekolojik mimari","ekoturizm-kamp"=>"İç Anadolu Bölgesi"}
 $title = "Bağ Rehberi"
 $siteurl = "https://www.bagrehberi.org"
 $description = "Türkiye'nin Bağ Rehberi"
